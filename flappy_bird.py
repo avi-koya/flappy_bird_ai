@@ -35,4 +35,8 @@ class Bird:
         self.tick_count = 0
         self.height = self.y
 
-    #def move(self):
+    def move(self):
+        self.tick_count += 1
+
+        d = self.vel * self.tick_count + 1.5*self.tick_count**2
+
